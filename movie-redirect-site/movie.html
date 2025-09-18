@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title id="pageTitle">Movie — DarkClips</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta id="metaDesc" name="description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="assets/images/poster-placeholder.jpg" />
+    <script type="application/ld+json" id="ldjson">
+      {}
+    </script>
+  </head>
+  <body class="dark">
+    <header class="nav">
+      <div class="brand">
+        <a href="index.html"
+          ><img src="assets/icons/logo.svg" alt="logo" class="logo"
+        /></a>
+        <h1>DarkClips</h1>
+      </div>
+      <nav class="nav-links"><a href="index.html">Home</a></nav>
+    </header>
+
+    <main class="container single-movie">
+      <div class="banner-ad">Top Banner Ad Placeholder</div>
+
+      <article class="movie-content">
+        <div class="poster">
+          <img
+            id="posterImg"
+            src="assets/images/poster-placeholder.jpg"
+            alt="poster"
+          />
+        </div>
+        <div class="details">
+          <h2 id="movieTitle">Loading...</h2>
+          <p id="movieDesc">Please wait...</p>
+
+          <div class="trailer" id="trailerWrap"></div>
+
+          <div class="watch-now-area">
+            <a
+              id="watchBtn"
+              class="watch-btn"
+              href="#"
+              target="_blank"
+              rel="noopener"
+              >Watch Now</a
+            >
+            <button id="shareBtn" class="share-btn">Share</button>
+          </div>
+
+          <div class="ad-placeholder">Popup/Redirect Ad Placeholder</div>
+
+          <div class="schema-output">
+            Schema ready in page &lt;head&gt; (JSON-LD)
+          </div>
+        </div>
+      </article>
+
+      <div class="banner-ad">Bottom Banner Ad Placeholder</div>
+
+      <section class="related" id="related"></section>
+    </main>
+
+    <footer class="footer">
+      <p>Disclaimer + Quick links</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Movie page initializer
+      document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(location.search);
+        const id = params.get("id") || "avengers";
+        window.initMoviePage && window.initMoviePage(id);
+      });
+    </script>
+  </body>
+</html>

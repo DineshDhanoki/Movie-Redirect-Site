@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Watch trailers and redirect to streaming hosts — sample movie redirect site"
+    />
+    <title>DarkClips — Movies & Clips</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="theme-color" content="#0b0f13" />
+    <!-- Basic Open Graph -->
+    <meta property="og:title" content="DarkClips — Movies & Clips" />
+    <meta
+      property="og:description"
+      content="Browse movies and be redirected to streaming hosts."
+    />
+    <meta property="og:image" content="assets/images/poster-placeholder.jpg" />
+  </head>
+  <body class="dark">
+    <header class="nav">
+      <div class="brand">
+        <img src="assets/icons/logo.svg" alt="logo" class="logo" />
+        <h1>DarkClips</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#cat-action">Action</a>
+        <a href="#cat-drama">Drama</a>
+        <a href="#cat-comedy">Comedy</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="nav-actions">
+        <input id="search" placeholder="Search movies..." />
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Top banner ad placeholder -->
+      <div class="banner-ad">Banner ad placeholder (728x90)</div>
+
+      <section class="grid" id="movie-grid"></section>
+
+      <!-- Pagination placeholder -->
+      <div class="pagination"><button id="loadMore">Load more</button></div>
+    </main>
+
+    <aside class="sidebar">
+      <div class="affiliate">
+        <h3>Affiliate</h3>
+        <div class="aff-banners">
+          <a href="#"
+            ><img
+              src="https://via.placeholder.com/300x250?text=Affiliate+Banner"
+              alt="affiliate"
+          /></a>
+        </div>
+      </div>
+
+      <div class="push-ads">
+        <h3>Push notifications</h3>
+        <p>Placeholder for push script (e.g., Propush.me)</p>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <div>
+        <p>
+          Disclaimer: This site only links to external hosts. We do not host
+          content.
+        </p>
+        <nav class="quick-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="dmca.html">DMCA</a>
+        </nav>
+      </div>
+      <small
+        >&copy; <span id="year"></span> DarkClips — All rights reserved.</small
+      >
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
