@@ -1,0 +1,32 @@
+[
+  {
+    "id": "avengers",
+    "title": "Avengers: Endgame",
+    "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins. The Avengers assemble once more to reverse Thanos' actions.",
+    "thumbnail": "/images/avengers-thumb.jpg",
+    "poster": "/images/avengers-poster.jpg",
+    "trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
+    "watchUrl": "https://example.com/watch/avengers",
+    "category": "Action"
+  },
+  {
+    "id": "inception",
+    "title": "Inception",
+    "description": "A skilled thief is offered a chance to have his past crimes forgiven if he can implant another person’s idea into a target’s subconscious.",
+    "thumbnail": "/images/inception-thumb.jpg",
+    "poster": "/images/inception-poster.jpg",
+    "trailer": "https://www.youtube.com/embed/YoHD9XEInc0",
+    "watchUrl": "https://example.com/watch/inception",
+    "category": "Sci-Fi"
+  },
+  {
+    "id": "joker",
+    "title": "Joker",
+    "description": "In Gotham City, a mentally troubled comedian embarks on a downward spiral that leads to the creation of the iconic villain, the Joker.",
+    "thumbnail": "/images/joker-thumb.jpg",
+    "poster": "/images/joker-poster.jpg",
+    "trailer": "https://www.youtube.com/embed/zAGVQLHvwOY",
+    "watchUrl": "https://example.com/watch/joker",
+    "category": "Drama"
+  }
+]
