@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie — DarkClips</title>
+    <meta name="description" content="Watch this movie online">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="nav">
+        <div class="brand">
+            <a href="index.html">
+                <h1>🎬 DarkClips</h1>
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="container single-movie">
+        <article class="movie-content">
+            <div class="poster">
+                <img id="posterImg" src="" alt="Movie Poster" />
+            </div>
+            <div class="details">
+                <h2 id="movieTitle">Loading...</h2>
+                <p id="movieDesc">Please wait...</p>
+
+                <div class="trailer" id="trailerWrap"></div>
+
+                <div class="watch-now-area">
+                    <a id="watchBtn" class="watch-btn" href="#" target="_blank" rel="noopener">
+                        Watch Now
+                    </a>
+                    <button id="shareBtn" class="share-btn">Share</button>
+                </div>
+            </div>
+        </article>
+
+        <section class="related" id="related">
+            <h3>More Movies</h3>
+            <div class="grid" id="related-movies"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Disclaimer: This site only links to external hosts. We do not host content.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Movie page initializer
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(location.search);
+            const id = params.get("id") || "avengers";
+            initMoviePage(id);
+        });
+    </script>
+</body>
+</html>

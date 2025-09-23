@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkClips — Movies & Clips</title>
+    <meta name="description" content="Watch trailers and redirect to streaming hosts — sample movie redirect site">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="nav">
+        <div class="brand">
+            <h1>🎬 DarkClips</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#action">Action</a>
+            <a href="#drama">Drama</a>
+            <a href="#comedy">Comedy</a>
+        </nav>
+        <div class="nav-actions">
+            <input id="search" placeholder="Search movies..." />
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Discover Amazing Movies</h2>
+            <p>Watch trailers and get redirected to your favorite streaming platforms</p>
+        </section>
+
+        <section class="grid" id="movie-grid">
+            <!-- Movies will be loaded here by JavaScript -->
+        </section>
+
+        <div class="pagination">
+            <button id="loadMore">Load More Movies</button>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="affiliate">
+            <h3>Sponsored</h3>
+            <div class="aff-banners">
+                <a href="https://netflix.com" target="_blank">
+                    <div class="affiliate-banner">Netflix</div>
+                </a>
+                <a href="https://amazon.com/prime" target="_blank">
+                    <div class="affiliate-banner">Amazon Prime</div>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div>
+            <p>Disclaimer: This site only links to external hosts. We do not host content.</p>
+            <nav class="quick-links">
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#dmca">DMCA</a>
+            </nav>
+        </div>
+        <small>&copy; <span id="year"></span> DarkClips — All rights reserved.</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
