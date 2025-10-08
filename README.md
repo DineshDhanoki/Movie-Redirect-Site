@@ -1,88 +1,36 @@
-# 🎬 DarkClips - Simple Movie Redirect Site
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A clean, simple movie redirect site that displays movie information and redirects users to streaming platforms.
+## Getting Started
 
-## 📁 Files
+First, run the development server:
 
-- `index.html` - Homepage with movie grid
-- `movie.html` - Individual movie pages
-- `script.js` - JavaScript functionality
-- `styles.css` - Styling and responsive design
-
-## 🚀 How to Use
-
-1. **Open `index.html`** in your web browser
-2. **Browse movies** in the grid layout
-3. **Click "Watch Now"** to go to individual movie pages
-4. **Search movies** using the search bar
-5. **Click "Load More"** to see additional movies (currently shows alert)
-
-## 🎯 Features
-
-- **Responsive Design** - Works on desktop, tablet, and mobile
-- **Movie Grid** - Clean card layout with movie posters
-- **Search Functionality** - Filter movies by title
-- **Individual Movie Pages** - Detailed movie information with trailers
-- **Share Functionality** - Share movie pages
-- **Affiliate Links** - Sidebar with streaming service links
-
-## 🛠️ Customization
-
-### Adding Movies
-
-Edit the `MOVIES` array in `script.js`:
-
-```javascript
-const MOVIES = [
-    {
-        id: 'your-movie-id',
-        title: 'Your Movie Title',
-        year: 2024,
-        category: 'Action',
-        desc: 'Movie description...',
-        thumb: 'https://your-image-url.com/thumb.jpg',
-        poster: 'https://your-image-url.com/poster.jpg',
-        trailer: 'https://youtube.com/embed/VIDEO_ID',
-        watchUrl: 'https://your-streaming-url.com'
-    }
-];
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### Changing Colors
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Edit the CSS variables in `styles.css`:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```css
-:root {
-    --primary-color: #e50914;  /* Red color */
-    --background: #0c0c0c;     /* Dark background */
-    --text-color: #ffffff;     /* White text */
-}
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Adding Real Streaming Links
+## Learn More
 
-Replace the `watchUrl` values in the `MOVIES` array with actual streaming platform URLs.
+To learn more about Next.js, take a look at the following resources:
 
-## 📱 Mobile Support
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-The site is fully responsive and works on:
-- Desktop computers
-- Tablets
-- Mobile phones
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 🔧 Browser Support
+## Deploy on Vercel
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## 📄 License
-
-This is a sample project for educational purposes.
-
----
-
-**Ready to go!** Just open `index.html` in your browser to see your movie site in action.
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
